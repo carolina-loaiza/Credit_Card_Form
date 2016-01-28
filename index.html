@@ -1,0 +1,64 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>App Form</title>
+		<link href='http://fonts.googleapis.com/css?family=Biryani' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<h1><i class="fa fa-credit-card-alt logo"></i>Form App</h1>
+		</header>
+		<div class="main_content">
+			<form id="credit-card-form" class="form-inline">
+				<fieldset id="personal">
+					<legend>Personal Data</legend>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-user"></i></span>
+						<input type="text" data-type="name" class="form-control" placeholder="Name" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-envelope"></i></span>
+						<input type="email"  data-type="email" class="form-control" placeholder="Email" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-phone"></i></span>
+						<input type="text" data-type="phone-number" class="form-control" placeholder="Phone" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-map-marker"></i></span>
+						<input type="text" class="form-control"  data-type="address" placeholder="Address" value=''>
+					</div>
+					<button id="personal-data" class="btn form-btn">Continue</button>
+			  	</fieldset>
+			  	<fieldset id="credit-card" class="hidden">
+					<legend>Credit Card Info</legend>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-credit-card"></i></span>
+						<input type="text" data-type="name" class="form-control" placeholder="Name on card" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-hashtag"></i></span>
+						<input type="text" data-type="card-number" class="form-control" placeholder="Card number" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-calendar"></i></span>
+						<input type="date" data-type="date" class="form-control" placeholder="Expiry Date" value=''>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon icon-input"><i class="fa fa-ellipsis-h"></i></span>
+						<input type="text" data-type="cvv-number" class="form-control" placeholder="CVV" value=''>
+					</div>
+					<input class="btn form-btn" type="submit" id="formSubmit" value="Checkout">
+			  	</fieldset>
+			</form>
+		</div> <!--End of main_content -->
+		<script type="text/javascript" src="js/validateData.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>
